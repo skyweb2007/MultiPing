@@ -1,111 +1,117 @@
 object FormOptions: TFormOptions
   Left = 0
-  Height = 350
+  Height = 233
   Top = 0
-  Width = 559
+  Width = 373
   BorderStyle = bsDialog
   Caption = 'Options'
-  ClientHeight = 350
-  ClientWidth = 559
-  DesignTimePPI = 144
+  ClientHeight = 233
+  ClientWidth = 373
   Position = poMainFormCenter
-  Visible = False
   object Bevel1: TBevel
     Left = 0
-    Height = 56
-    Top = 294
-    Width = 559
+    Height = 37
+    Top = 196
+    Width = 373
     Align = alBottom
     Shape = bsTopLine
   end
   object GroupBox1: TGroupBox
-    Left = 16
-    Height = 272
-    Top = 8
-    Width = 216
+    Left = 11
+    Height = 181
+    Top = 5
+    Width = 144
     Caption = 'Colors'
-    ClientHeight = 243
-    ClientWidth = 212
+    ClientHeight = 159
+    ClientWidth = 140
+    ParentFont = False
     TabOrder = 0
     object cbPingOK: TColorBox
-      Left = 16
-      Height = 32
-      Top = 32
-      Width = 180
-      Selected = clFuchsia
+      Left = 11
+      Height = 23
+      Top = 21
+      Width = 120
+      Selected = clYellow
       Style = [cbStandardColors, cbExtendedColors, cbCustomColor, cbPrettyNames]
-      ItemHeight = 26
+      ItemHeight = 17
+      ParentFont = False
       TabOrder = 0
     end
     object Label1: TLabel
-      Left = 16
-      Height = 24
-      Top = 4
-      Width = 70
+      Left = 11
+      Height = 17
+      Top = 3
+      Width = 47
       Caption = 'Ping OK'
       FocusControl = cbPingOK
       ParentColor = False
+      ParentFont = False
     end
     object Label2: TLabel
-      Left = 16
-      Height = 24
-      Top = 80
-      Width = 96
+      Left = 11
+      Height = 17
+      Top = 53
+      Width = 63
       Caption = 'Ping Failed'
       FocusControl = cbPingFailed
       ParentColor = False
+      ParentFont = False
     end
     object cbPingFailed: TColorBox
-      Left = 16
-      Height = 32
-      Top = 108
-      Width = 180
-      Selected = clSilver
+      Left = 11
+      Height = 23
+      Top = 72
+      Width = 120
+      Selected = clGray
       Style = [cbStandardColors, cbExtendedColors, cbCustomColor, cbPrettyNames]
-      ItemHeight = 26
+      ItemHeight = 17
+      ParentFont = False
       TabOrder = 1
     end
     object Label3: TLabel
-      Left = 16
-      Height = 24
-      Top = 160
-      Width = 104
+      Left = 11
+      Height = 17
+      Top = 107
+      Width = 71
       Caption = 'Background'
       FocusControl = cbBackground
       ParentColor = False
+      ParentFont = False
     end
     object cbBackground: TColorBox
-      Left = 16
-      Height = 32
-      Top = 188
-      Width = 180
-      Selected = clWhite
+      Left = 11
+      Height = 23
+      Top = 125
+      Width = 120
+      Selected = clNavy
       Style = [cbStandardColors, cbExtendedColors, cbCustomColor, cbPrettyNames]
-      ItemHeight = 26
+      ItemHeight = 17
+      ParentFont = False
       TabOrder = 2
     end
   end
   object GroupBox2: TGroupBox
-    Left = 264
-    Height = 184
-    Top = 8
-    Width = 278
+    Left = 176
+    Height = 123
+    Top = 5
+    Width = 185
     Caption = 'Font'
-    ClientHeight = 155
-    ClientWidth = 274
+    ClientHeight = 101
+    ClientWidth = 181
+    ParentFont = False
     TabOrder = 1
     object mmDemo: TMemo
-      Left = 10
-      Height = 145
+      Left = 7
+      Height = 94
       Top = 0
-      Width = 254
+      Width = 167
       Align = alClient
-      BorderSpacing.Left = 10
-      BorderSpacing.Right = 10
-      BorderSpacing.Bottom = 10
+      BorderSpacing.Left = 7
+      BorderSpacing.Right = 7
+      BorderSpacing.Bottom = 7
       BorderStyle = bsNone
       Font.CharSet = ANSI_CHARSET
-      Font.Height = -24
+      Font.Height = -16
       Font.Name = 'Comic Sans MS'
       Font.Pitch = fpVariable
       Font.Quality = fqDraft
@@ -120,45 +126,49 @@ object FormOptions: TFormOptions
     end
   end
   object Button1: TButton
-    Left = 296
-    Height = 38
-    Top = 304
-    Width = 113
+    Left = 197
+    Height = 25
+    Top = 203
+    Width = 75
     Caption = '&OK'
     ModalResult = 1
+    ParentFont = False
     TabOrder = 2
   end
   object Button2: TButton
-    Left = 429
-    Height = 38
-    Top = 304
-    Width = 113
+    Left = 286
+    Height = 25
+    Top = 203
+    Width = 75
     Caption = '&Cancel'
     ModalResult = 2
+    ParentFont = False
     TabOrder = 3
   end
   object cbAutoSize: TCheckBox
-    Left = 280
-    Height = 28
-    Top = 252
-    Width = 178
+    Left = 187
+    Height = 21
+    Top = 168
+    Width = 122
     Caption = 'Autosize Window'
+    ParentFont = False
     TabOrder = 4
   end
   object Button3: TButton
-    Left = 328
-    Height = 38
-    Top = 200
-    Width = 135
+    Left = 219
+    Height = 25
+    Top = 133
+    Width = 90
     Caption = 'Change Font'
     OnClick = Button3Click
+    ParentFont = False
     TabOrder = 5
   end
   object FontDialog1: TFontDialog
     MinFontSize = 0
     MaxFontSize = 0
     PreviewText = '123 456 789'
-    left = 192
-    top = 304
+    left = 128
+    top = 203
   end
 end

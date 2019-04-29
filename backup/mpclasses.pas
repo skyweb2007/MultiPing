@@ -9,7 +9,7 @@ uses
 
 type
 
-  TmpLogPingStatus = procedure(const ip: string; status: boolean) of object;
+  TmpLogPingStatus = procedure(ip: string; status: boolean) of object;
 
   { TmpThread }
 

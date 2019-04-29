@@ -47,7 +47,7 @@ type
     FIpWidth: integer;
     FCharHeight: integer;
     FLineHeight: integer;
-    procedure LogPingStatus(const ip: string; status: boolean);
+    procedure LogPingStatus(constip: string; status: boolean);
     procedure AutoResizeWindow;
     procedure PaintEmpty(pb: TPaintBox);
     procedure PaintError(pb: TPaintBox);
